@@ -1,0 +1,122 @@
+.book-boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1em;
+    gap: 3em;
+    margin-left: 5rem;
+}
+
+.book-box {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-background-color);
+    padding: 1em;
+    gap: 0.25em;
+    border: 1px solid black;
+    text-align: center;
+    align-items: center;
+    max-height: 22rem;
+    width: 14rem;
+}
+
+.book-title {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.book-author {
+    font-style: italic;
+    color: #b7b7b7;
+    font-size: 13px;
+}
+
+.book-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 0;
+}
+
+.book-price {
+    color: #A00000;
+    font-family: 'Roboto';
+    font-weight: 600;
+}
+
+.buy-button {
+    background: #00A0A0;
+    padding: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.buy-button:hover {
+    background: #60909a;
+}
+
+.book-image:hover .read-now-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(62, 62, 62, 0.85);
+}
+
+.read-now-overlay:hover {
+
+}
+
+.read-now-overlay-button {
+    display: none;
+}
+
+.read-now-overlay-button:hover {
+    cursor: pointer;
+}
+
+.read-now-overlay:hover .read-now-overlay-button:hover {
+    cursor: pointer;
+}
+
+.read-now-overlay:hover .read-now-overlay-button {
+    display: inline-block;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    margin-right: -50%;
+    top: 50%;
+    left: 50%;
+    padding: 10px;
+    gap: 10px;
+    border: 3px solid #FFFFFF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 12px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    background: none;
+    color: white;
+    margin: auto;
+    white-space: nowrap;
+    text-align: center;
+    transition-delay:1s;
+}
+
+.book-image {
+    position: relative;
+    /*align-content: center;*/
+}
+
+.book-image img {
+    height: 220px;
+    width: 150px;
+}
